@@ -1,0 +1,36 @@
+.search{
+    display: none;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    border-radius: 20px;
+    border: 1px solid rgb(65, 109, 204);
+    background-color: rgba(255, 255, 255, 0.562);
+    filter: blur(50%);
+    color: black;
+    padding: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(65, 109, 204);
+}
+#search.open{
+    display: block;
+}
+#shuttdown{
+    display: none;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    border-radius: 20px;
+    border: 1px solid rgb(65, 109, 204);
+    background-color: rgba(255, 255, 255, 0.562);
+    filter: blur(50%);
+    color: black;
+    padding: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(65, 109, 204);
+}
+#shuttdown.open{
+    display: block;
+}

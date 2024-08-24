@@ -1,0 +1,91 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+main{
+    background-image: url(../img/win\ xp\ wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.taskbar{
+    height: 45px;
+    position: absolute;
+    bottom: 0%;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(65, 109, 204);
+    align-items: center;
+}
+
+.logo_icon{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 6%;
+}.logo_icon a{
+    width: 100%;
+    border-top-right-radius: 100px;
+
+    border-bottom-right-radius: 100px;
+}
+.logo_icon a:hover{
+    background-color: rgba(0, 128, 0, 0.445);
+    box-shadow: 5px 0px 5px 0px white;
+
+}
+.logo_icon img{
+width: 25px;
+height: 25px;
+}
+.start_div{
+    transition: all 0.5 ease;
+
+}
+.start_div:hover{
+    
+}
+/* -------------------------------------------------------------------------------- */
+.task_search{
+    border-radius: 20px;
+    border: none;
+    background-image:url(../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x:10px ;
+    background-color: rgba(224, 221, 221, 0.507);
+    filter: blur(100%);
+    /* padding-left: 20px; */
+
+}
+.task_search:hover{
+    /* background-color: rgb(207, 205, 203); */
+    background-color: rgba(224, 221, 221, 0.39);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.658);
+
+
+}
+.task_search::placeholder{
+/* padding-left: 30px; */
+font-size: 10px;
+color: black;
+}
+.task_search:focus{
+    outline: none;
+    padding-left: 20px;
+    /* background-color: transparent; */
+    
+}
+/* ---------------------------------------------------------------------------- */
+.task_li_img img{
+    margin-top: '0px';
+    cursor: pointer;
+}
+.hr{
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 2px;
+    height: 25px;
+    margin-left: 5px;
+}
+

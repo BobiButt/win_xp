@@ -1,0 +1,73 @@
+.task_menu{
+    display:none;
+    width: 430px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+position: absolute;
+top: 90px;
+transition: all 2s ease;
+
+
+}
+#start_menu.show{
+    display: block;
+    transition: all 2s ease;
+}
+.task_menu_top{
+    border-top-right-radius:20px ;
+    background-color: rgb(65, 109, 204);
+color: white;
+box-shadow: 10px black;
+}
+.task_menu_mid img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.task_menu_mid1{
+    border-right: 1px solid black;
+}
+.task_menu1_div{
+    cursor: pointer;
+}
+.task_menu1_div:hover{
+border: 1px solid rgb(65, 109, 204);
+/* background-color: rgb(65, 109, 204); */
+/* color: white; */
+border-radius: 10px;
+}
+.task_menu_mid1 p{
+    font-size: 12px;
+
+    margin: 0px;
+
+}
+/* ------------------------------------------------- */
+.task_menu_mid2{
+    background-color: rgb(65, 109, 204);
+}
+.task_menu_mid2 div:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- */
+.task_menu_footer{
+    background-color: rgb(65, 109, 204);
+    color: white;
+    border-bottom-right-radius: 20px;
+}
+.task_menu_footer img{
+padding: 0%;
+/* margin: 10px 30px; */
+}
+.footer_div{
+    transition:all 0.5s ease;
+    cursor: pointer;
+}
+.footer_div:hover{
+
+
+    transform: scale(1.1);
+}
