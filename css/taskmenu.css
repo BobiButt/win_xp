@@ -1,28 +1,39 @@
 .task_menu{
-    display:none;
-    width: 430px;
+    /* display:none; */
+    width: 32%;
     border-top-right-radius:20px ;
     border-bottom-right-radius: 20px;
-position: absolute;
-top: 90px;
+/* position: absolute; */
+/* top: 90px; */
 transition: all 2s ease;
-
+overflow-y: auto;
+position: fixed;
+left: 0;
+bottom: 45px;
+transition: transform 0.2s ease;
+transform: translateY(100%);
+z-index: -1;
 
 }
 #start_menu.show{
     display: block;
-    transition: all 2s ease;
+transform: translateX(0); /*or the sidebar and adjusting the content margin.*/
+
+    /* transition: all 2s ease; */
 }
 .task_menu_top{
     border-top-right-radius:20px ;
     background-color: rgb(65, 109, 204);
 color: white;
 box-shadow: 10px black;
+box-shadow: 0px 0px 5px 5px rgb(52, 100, 202) inset;
+
 }
 .task_menu_mid img{
     width: 40px;
     height: 40px;
     margin: 10px;
+    /* cursor: pointer; */
 }
 .task_menu_mid1{
     border-right: 1px solid black;
@@ -42,8 +53,12 @@ border-radius: 10px;
     margin: 0px;
 
 }
+/* ========================================================== */
+
+
 /* ------------------------------------------------- */
 .task_menu_mid2{
+  
     background-color: rgb(65, 109, 204);
 }
 .task_menu_mid2 div:hover{
@@ -57,6 +72,7 @@ border-radius: 10px;
     background-color: rgb(65, 109, 204);
     color: white;
     border-bottom-right-radius: 20px;
+
 }
 .task_menu_footer img{
 padding: 0%;
@@ -69,5 +85,44 @@ padding: 0%;
 .footer_div:hover{
 
 
-    transform: scale(1.1);
+    transform: scale(0.9);
+}
+/* ================================== */
+.all_programs{
+    display: none;
+    width: 45%;
+    /* width: 300px; */
+    /* height: 300px; */
+    position: absolute;
+    /*top: 400px;*/
+    left:50%; 
+    border-radius: 10px;
+    border: 1px solid rgb(65, 109, 204);
+    background-color: rgba(255, 255, 255, 0.829);
+    filter: blur(50%);
+    color: black;
+    padding: 0px;
+    
+    box-shadow: 2px 2px 2px 2px rgb(65, 109, 204);
+}
+    
+    .all_programs img{
+    height: 25px;
+    width: 25px;
+    }
+.all_programs li{
+    margin: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.all_programs li:hover{
+    border: 1px solid rgb(65, 109, 204);
+    border-radius: 5px;
+}
+#all_program.p_display_block{
+display: block;
+}
+#all_program.p_display_none{
+display: none;
+
 }

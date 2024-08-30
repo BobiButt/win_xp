@@ -3,7 +3,7 @@
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 400px;
+    bottom: 50px;
     left: 100px;
     border-radius: 20px;
     border: 1px solid rgb(65, 109, 204);

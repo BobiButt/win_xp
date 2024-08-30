@@ -19,7 +19,7 @@
     <script src="js/index.js"></script>
 </head>
 
-<body>
+<body onclick="off()">
     <header></header>
     <main>
         <!-- ===============task    menu ========================== -->
@@ -74,12 +74,26 @@
                         </div>
                     </div>
                     <hr class=" mx-3 bg-dark">
-                    <div class="d-flex justify-content-center py-2 task_menu1_div mb-2">
+                    <div class="d-flex justify-content-center py-2 task_menu1_div mb-2" onclick="all_p()">
                         <p style="font-size: 17px;">All Programs</p>
                         <i class="fa fa-arrow-right mt-1 ml-3 text-success" aria-hidden="true"></i>
                     </div>
 
                 </div>
+                <div class="all_programs" id="all_program">
+                    <ul class="list-unstyled text-center">
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+        <!-- <hr class="mx-2 bg-dark"> -->
+        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                        <li class="nav-links p-2"><img src="img/icons/Microsoft_Edge_logo_(2019).svg" alt=""   >First link</li>
+                    
+                    </ul>
+                                    </div>
                 <div class="w-50 task_menu_mid2">
                     <div class="d-flex px-3 pt-3 pb-2">
                         <i class="fa fa-file-text  text-white mr-3 h4" aria-hidden="true"></i></i>
@@ -127,6 +141,7 @@
                 </div>
             </div>
         </div>
+       
     </main>
     <section id="shuttdown">
         <p>As it works for u :) </p>
@@ -145,12 +160,12 @@ Looks like u r trying to search..
         <div class="">
             <div class="taskbar w-100 d-flex">
 
-                <div class="logo_icon bg-success start_div" onclick="start()">
+                <div class="logo_icon bg-success start_div"  onclick="start()">
                     <a href="#" type="button" class="p-2 pr-3 btn text-white"><img src="./img/winxplogo.png"
                             alt="">Start</a>
                 </div>
                 <div onclick="search()" style="cursor: pointer;">
-                    <input type="search" name="search"  placeholder=" Search anything..." class="pt-1 pb-1 pl-5 task_search ml-3"  >
+                    <input type="search" name="search"  placeholder=" Search anything..." class="task_search ml-3" autocomplete="off" >
                 </div>
                 <div class="d-flex list-unstyled task_li_img ">
                     <div><img src="img/filemanager-removebg-preview.png" alt="" height="50px" width="60px" onclick="alrt()"></div>
